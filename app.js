@@ -12,13 +12,16 @@ app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 
 ///STATIC FILE
-app.use(express.static('public'))
+app.use(express.static('public'));
+
+app.engine('hbs',exphbs({extensionname:'.hbs'}))
+app.set('view engine',"hbs")
 
 
 const pool = mysql.createPool({
 connectionLimit: 10,
            host: "localhost",
-       database:"",
+       database: "",
            user: "root",
        password: "",
 })
