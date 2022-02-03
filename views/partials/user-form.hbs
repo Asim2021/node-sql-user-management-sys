@@ -1,0 +1,22 @@
+<div class="form-floating mb-3 col-md-6">
+  <input type="text" class="form-control" id="floatingInput" name="first_name" placeholder="Elon" value="{{this.first_name}}" required>
+  <label for="floatingInput">First Name</label>
+</div>
+<div class="form-floating mb-3 col-md-6">
+  <input type="text" class="form-control" id="floatingInput" name="last_name" placeholder="Musk" value="{{this.last_name}}" required>
+  <label for="floatingInput">Last Name</label>
+</div>
+<div class="form-floating mb-3 col-md-6">
+  <input type="email" class="form-control" id="floatingInput" name="user_email" placeholder="xyz@gmail.com" value="{{this.email}}" required>
+  <label for="floatingInput">Email address</label>
+</div>
+<div class="form-floating mb-3 col-md-6">
+  <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"  maxlength="10" class="form-control" id="floatingInput" value="{{this.phone}}" name="user_phone" placeholder="12345678">
+  <label for="floatingInput">Phone</label>
+</div>
+<div class="form-floating mb-3 col-md-12">
+  <textarea type="text" class="form-control" id="floatingInput" name="user_comment"  placeholder="Leave a comment here">{{this.comments}}</textarea>
+  <label for="floatingInput">Comment</label>
+</div>
+ <button type="submit" class="btn btn-primary col-md-12">Submit</button>
+</div>
